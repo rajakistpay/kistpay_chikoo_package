@@ -1,42 +1,17 @@
 library kistpay_chikoo;
 
-
 import 'core/app_export.dart';
 
 var globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
-typedef InvokeKistPayPayment = Future<String> Function(String message);
-InvokeKistPayPayment? messageCallback;
-
-// Global function to invoke the callback
-// String sendMessageAndReceiveResponse(String message) {
-//   if (messageCallback != null) {
-//     // Invoke the callback function with the message from the payment screen
-//     String response = messageCallback!(message);
-//
-//     // Handle the response received from the consuming app
-//     // Do something with the response if needed
-//     return 'Received response in Payment Screen: $response';
-//   }
-//
-//   return '';
-//
-// }
-// Callback variable to hold the function reference
-//  InvokeKistPayPayment? messageCallback;
-//  myPackageMethod(InvokeKistPayPayment? callback) {
-//   // Invoke the callback function with a message
-//   if (callback != null) {
-//     String message = 'Hello from your package!';
-//     String result = callback(message);
-//     // Do something with the result if needed
-//     print(result);
-//   }
-// }
+typedef InvokeKistpayPayment = Future<String> Function(String message);
+InvokeKistpayPayment? globalCallBack;
 
 class KistpayFinancingScreen extends StatelessWidget {
-  const KistpayFinancingScreen({super.key});
-
+  KistpayFinancingScreen({super.key, this.invokeKistpayPayment}) {
+    globalCallBack = invokeKistpayPayment;
+  }
+  final InvokeKistpayPayment? invokeKistpayPayment;
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -73,7 +48,8 @@ class KistpayFinancingScreen extends StatelessWidget {
               ..add(TermAndConditionInitialEvent())),
         BlocProvider<AuthenticateBloc>(
             create: (context) =>
-                AuthenticateBloc(const AuthenticateState(),context)..add(InitialEvent())),
+                AuthenticateBloc(const AuthenticateState(), context)
+                  ..add(InitialEvent())),
       ],
       child: MaterialApp(
         navigatorKey: NavigatorService.navigatorKey,

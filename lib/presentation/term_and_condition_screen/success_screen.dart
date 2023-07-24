@@ -1,4 +1,3 @@
-
 import 'package:kistpay_chikoo/core/app_export.dart';
 
 class SuccessScreen extends StatelessWidget {
@@ -6,7 +5,6 @@ class SuccessScreen extends StatelessWidget {
   static Widget builder(BuildContext context) {
     return const SuccessScreen();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +15,6 @@ class SuccessScreen extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
@@ -127,30 +124,41 @@ class SuccessScreen extends StatelessWidget {
         onTap: () {
           LoadingDialog.showLoadingDialog(context: context);
 
-
+          context
+              .read<KycBloc>()
+              .emitReset(context.read<KycBloc>().state.clear());
+          context.read<UserDetailsBloc>().emitReset(
+              context.read<UserDetailsBloc>().state.clearReferences());
           context.read<LoginScreenBloc>().reset(LoginScrennInitialEvent());
           context.read<KycBloc>().reset(KycInitialEvent());
           context.read<PhoneDetailsBloc>().reset(PhoneDetailsInitialEvent());
           context.read<UserDetailsBloc>().reset(UserDetailsInitialEvent());
-          context.read<TermAndConditionBloc>().reset( TermAndConditionInitialEvent());
+          context
+              .read<TermAndConditionBloc>()
+              .reset(TermAndConditionInitialEvent());
           context.read<AuthenticateBloc>().reset(InitialEvent());
           print('object');
-          Future.delayed(const Duration(seconds: 2),(){
+          Future.delayed(const Duration(seconds: 2), () {
             Navigator.of(context, rootNavigator: true).pop('dialog');
 
             Navigator.popUntil(context, (route) => route.isFirst);
           });
-
-
-
         },
       ),
     );
   }
 }
+
 extension BlocReset on Bloc {
   void reset(dynamic initialState) {
     // ignore: invalid_use_of_visible_for_testing_member
     add(initialState);
+  }
+}
+
+extension BlocEmit on Bloc {
+  void emitReset(dynamic initialState) {
+    // ignore: invalid_use_of_visible_for_testing_member
+    emit(initialState);
   }
 }

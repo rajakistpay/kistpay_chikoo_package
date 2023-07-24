@@ -315,7 +315,7 @@ class PaymentScreen extends StatelessWidget {
               margin: getMargin(left: 12, right: 13, bottom: 25),
               padding: ButtonPadding.PaddingAll18,
               onTap: () async {
-                if (messageCallback != null) {
+                if (globalCallBack != null) {
                   dynamic data = {
                     'txnAmount': context
                         .read<AuthenticateBloc>()
@@ -329,7 +329,7 @@ class PaymentScreen extends StatelessWidget {
                         .data['data']['publicId'],
                     'txnType': 'SALE'
                   };
-                  final response = await messageCallback!(jsonEncode(data));
+                  final response = await globalCallBack!(jsonEncode(data));
                   print('got response from consuming app$response');
                   dynamic decodedResponse = jsonDecode(response);
                   if (decodedResponse['code'] == '0000') {

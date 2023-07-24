@@ -92,8 +92,8 @@ class LoginScreen extends StatelessWidget {
                         builder: (context, phoneController) {
                           return CustomFloatingEditText(
                               controller: phoneController,
-                              labelText: "Enter your phone number",
-                              hintText: "03311234567",
+                              labelText: "Phone number",
+                              hintText: "Enter your phone number",
                               textInputType:
                                   const TextInputType.numberWithOptions(
                                       signed: true, decimal: true),

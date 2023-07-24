@@ -93,4 +93,22 @@ class KycState extends Equatable {
   bool utilityNull() {
     return incomeProofPath == null || utilityBills == null;
   }
+  KycState clear() {
+    return KycState(
+      kycModelObj: null,
+      frontCnicPath: null,
+      backCnicPath: null,
+      selfiePath: null,
+      incomeProofPath: null,
+      utilityBills: null,
+      isLoading: false,
+      error: '',
+      success: false,
+      fontCnicImageUrl: null,
+      backCnicImageUrl: null,
+      incomeProofUrl: null,
+      selfieUrl: null,
+      utilityUrl: null,
+    );
+  }
 }

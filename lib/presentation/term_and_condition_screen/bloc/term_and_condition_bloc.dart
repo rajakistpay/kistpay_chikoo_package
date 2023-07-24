@@ -37,8 +37,8 @@ class TermAndConditionBloc
       // Extract the digits after removing any leading zeros, "0092", or "+92"
 
       // Add the prefix "92" to the phone number
-      final phoneNumber =
-      loginScreenBloc.state.phoneController?.text.replaceAll(RegExp(r'^(\+92|0|0092)'), '');
+      final phoneNumber = loginScreenBloc.state.phoneController?.text
+          .replaceAll(RegExp(r'^(\+92|0|0092)'), '');
       final reference1 = userDetailsBloc
           .state.firstReferenceMobileNumberController?.text
           .trim()
@@ -58,14 +58,16 @@ class TermAndConditionBloc
               cnicBackURL: kycBloc.state.backCnicImageUrl,
               cnicFrontURL: kycBloc.state.fontCnicImageUrl,
               city: userDetailsBloc.state.cityController?.text.trim(),
-              sourceOfIncome: num.parse(
-                  userDetailsBloc.state.radioGroup),
+              sourceOfIncome: num.parse(userDetailsBloc.state.radioGroup),
               monthlyIncome: num.parse(
                   userDetailsBloc.state.monthlyincomeController!.text.trim()),
-              companyName: num.parse(
-                  userDetailsBloc.state.radioGroup)==1?userDetailsBloc.state.companyNameController!.text.trim():'',
-              designation:num.parse(
-                  userDetailsBloc.state.radioGroup)==1? userDetailsBloc.state.designationControllerController!.text.trim():'',
+              companyName: num.parse(userDetailsBloc.state.radioGroup) == 1
+                  ? userDetailsBloc.state.companyNameController!.text.trim()
+                  : '',
+              designation: num.parse(userDetailsBloc.state.radioGroup) == 1
+                  ? userDetailsBloc.state.designationControllerController!.text
+                      .trim()
+                  : '',
               deviceToFinanceId:
                   phoneDetailsBloc.state.data!.devicePublicId, // mmobile id,,
               email: 'kistpay@gmail.com',
@@ -74,19 +76,16 @@ class TermAndConditionBloc
                   .state.selectedDownPayment!
                   .replaceAll('%', '')),
               financingCustomer: FinancingCustomer(
-                  altphoneNumber:
-                  formattedPhoneNumber,
+                  altphoneNumber: formattedPhoneNumber,
                   cnicNumber: userDetailsBloc.state.cnicController?.text.trim(),
                   name: userDetailsBloc.state.nameController?.text.trim(),
-                  phoneNumber:
-                  formattedPhoneNumber),
+                  phoneNumber: formattedPhoneNumber),
               lastPaidBillURL: kycBloc.state.utilityUrl,
               proofOfIncomeURL: kycBloc.state.incomeProofUrl,
               reference1: Reference1(
                 name: userDetailsBloc.state.firstReferenceNameController?.text
                     .trim(),
-                phoneNumber:
-                '+92$reference1',
+                phoneNumber: '+92$reference1',
               ),
               reference2: Reference2(
                 name: userDetailsBloc.state.firstReference!.trim(),
@@ -101,27 +100,38 @@ class TermAndConditionBloc
               residentialStatusId: 1,
               gender: userDetailsBloc.state.gender));
       final response1 = await apiService.customerInstallmentPlan(
-
-        phonePrice:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.phonePrice.toString(),
-        downpayment:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.downpayment.toString(),
-        installmentPeriod: phoneDetailsBloc.state.selectedTenureIndex.toString(),
-        insuranceCharges:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.insuranceCharges.toString(),
-        totalUpfront:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.totalUpfront.toString(),
-        financingAmount:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.financingAmount.toString(),
-        financingFee:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.financingFee.toString(),
-        monthlyInstallment: phoneDetailsBloc
-            .state.phoneDetailsResponse!.data!.monthlyInstallment.toString(),
-        totalCostOfPhone:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.totalCostOfPhone.toString(),
-        processingFee:
-        phoneDetailsBloc.state.phoneDetailsResponse!.data!.processingFee.toString(),
-      );
+          phonePrice: phoneDetailsBloc.state.phoneDetailsResponse!.data!.phonePrice
+              .toString(),
+          downpayment: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.downpayment
+              .toString(),
+          installmentPeriod:
+              phoneDetailsBloc.state.selectedTenureIndex.toString(),
+          insuranceCharges: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.insuranceCharges
+              .toString(),
+          totalUpfront: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.totalUpfront
+              .toString(),
+          financingAmount: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.financingAmount
+              .toString(),
+          financingFee: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.financingFee
+              .toString(),
+          monthlyInstallment: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.monthlyInstallment
+              .toString(),
+          totalCostOfPhone: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.totalCostOfPhone
+              .toString(),
+          processingFee: phoneDetailsBloc
+              .state.phoneDetailsResponse!.data!.processingFee
+              .toString(),
+          phoneNumber: formattedPhoneNumber);
+      print(
+          ' plans ${phoneDetailsBloc.state.phoneDetailsResponse!.data!.processingFee.toString()} '
+          '${phoneDetailsBloc.state.phoneDetailsResponse!.data!.totalCostOfPhone.toString()} ${phoneDetailsBloc.state.phoneDetailsResponse!.data!.monthlyInstallment.toString()}${phoneDetailsBloc.state.phoneDetailsResponse!.data!.financingFee.toString()} ${phoneDetailsBloc.state.phoneDetailsResponse!.data!.financingAmount.toString()}${phoneDetailsBloc.state.phoneDetailsResponse!.data!.totalUpfront.toString()} ${phoneDetailsBloc.state.phoneDetailsResponse!.data!.insuranceCharges.toString()}${phoneDetailsBloc.state.selectedTenureIndex.toString()} ${phoneDetailsBloc.state.phoneDetailsResponse!.data!.downpayment.toString()} ${phoneDetailsBloc.state.phoneDetailsResponse!.data!.phonePrice.toString()}');
       LoadingDialog.hideLoadingDialog(context: context);
 
       // Simulating API call delay for 2 seconds
@@ -145,7 +155,9 @@ class TermAndConditionBloc
         // );
 
         showToast(
-            message: 'Congrats! Mobile Application Sent. against ID:${response.data['message']}', backgroundColor: Colors.green);
+            message:
+                'Congrats! Mobile Application Sent. against ID:${response.data['message']}',
+            backgroundColor: Colors.green);
         NavigatorService.pushNamed(
           AppRoutes.successScreen,
         );

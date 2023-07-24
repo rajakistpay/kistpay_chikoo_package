@@ -462,10 +462,10 @@ class ReferenceScreen extends StatelessWidget {
               BlocProvider.of<UserDetailsBloc>(context).state.isValid) {
             onTapNext(context);
           } else {
-            if (kDebugMode) {
+
               showToast(
                   message: 'Kindly select references relation', backgroundColor: Colors.red);
-            }
+
           }
         },
       ),

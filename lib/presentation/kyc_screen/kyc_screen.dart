@@ -185,7 +185,7 @@ class KycScreen extends StatelessWidget {
                               //     RegExp(r'[0-9]')),
                             ],
                             labelText: "CNIC",
-                            hintText: "43222-2230293-3",
+                            hintText: "43222-xxxxxxx-x",
                             validator: (value) {
                               if (value!.isEmpty) {
                                 return 'CNIC cannot be empty';

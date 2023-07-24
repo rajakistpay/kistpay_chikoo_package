@@ -138,4 +138,11 @@ class UserDetailsState extends Equatable {
   bool get isValid {
     return firstReference != null && secondReference != null;
   }
+  UserDetailsState clearReferences() {
+    return UserDetailsState(
+      // ... existing properties ...
+      firstReference: null, // Clear the firstReference
+      secondReference: null, // Clear the secondReference
+    );
+  }
 }

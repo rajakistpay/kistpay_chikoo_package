@@ -421,6 +421,7 @@ class ApiService {
     String? monthlyInstallment,
     String? totalCostOfPhone,
     String? processingFee,
+    String? phoneNumber
   }) async {
     try {
       const url =
@@ -430,14 +431,15 @@ class ApiService {
         "customerPlainId": 1,
         "phonePrice": phonePrice,
         "downpayment": downpayment,
-        "installmentPeriod": installmentPeriod,
+        "installmentPlan": installmentPeriod,
         "insuranceCharges": insuranceCharges,
         "totalUpfront": totalUpfront,
         "financingAmount": financingAmount,
         "financingFee": financingFee,
         "monthlyInstallment": monthlyInstallment,
         "totalCostOfPhone": totalCostOfPhone,
-        "processingFee": processingFee
+        "processingFee": processingFee,
+        "phoneNumber":phoneNumber
       })}');
       final response = await http.post(
         Uri.parse(url),
@@ -445,14 +447,15 @@ class ApiService {
           "customerPlainId": 1,
           "phonePrice": phonePrice,
           "downpayment": downpayment,
-          "installmentPeriod": installmentPeriod,
+          "installmentPlan": installmentPeriod,
           "insuranceCharges": insuranceCharges,
           "totalUpfront": totalUpfront,
           "financingAmount": financingAmount,
           "financingFee": financingFee,
           "monthlyInstallment": monthlyInstallment,
           "totalCostOfPhone": totalCostOfPhone,
-          "processingFee": processingFee
+          "processingFee": processingFee,
+          "phoneNumber":phoneNumber
         }),
         headers: {'Content-Type': 'application/json'},
       );
