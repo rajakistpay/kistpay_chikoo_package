@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9409e87-6b5a-451d-8b9a-78532b7810fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MontserratRomanBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MontserratRomanRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishItalicRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishRomanBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishRomanExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishRomanLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishRomanMedium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishRomanRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/MulishRomanSemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/PoppinsMedium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/RobotoRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/fonts/RobotoRomanBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/easypaisa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/image_not_found.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_arrowdown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_arrowdown_gray_700_01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_arrowleft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_arrowleft_indigo_400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_arrowup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_bluetoothicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_car.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_g10.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_icon_gray_800_01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_image57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_rectangle6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_redminote11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_signal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_television.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_toggleradiobu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_toggleradiobu_white_a700.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/img_undrawconfirmed81ex1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/jazzcash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/newApplocation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/payfast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/assets/images/payments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/app_export.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/network/api_services.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/color_constant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/image_constant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/logger.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/navigator_service.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/progress_dialog_utils.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/size_utils.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/utils/validation_functions.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/custom_painter_for_login.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/dialog_box.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/kisypay_chikoo.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/kyc_screen/bloc/kyc_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/kyc_screen/bloc/kyc_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/kyc_screen/bloc/kyc_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/kyc_screen/kyc_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/kyc_screen/models/kyc_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/login_screen/bloc/login_screnn_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/login_screen/bloc/login_screnn_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/login_screen/bloc/login_screnn_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/login_screen/login_screnn_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/login_screen/models/login_screnn_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/otp_screen/bloc/otp_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/otp_screen/bloc/otp_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/otp_screen/bloc/otp_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/otp_screen/models/otp_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/otp_screen/otp_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/payment/authenticate_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/payment/bloc/authenticate_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/payment/bloc/authenticate_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/payment/bloc/authenticate_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/payment/payment_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/payment_method/payment_method_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/bloc/phone_details_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/bloc/phone_details_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/bloc/phone_details_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/finance_price.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/financing_plans.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/models/listrscounter_item_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/models/phone_details_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/phone_details_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/plans_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_details_screen/widgets/listrscounter_item_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_listing_screen/bloc/phone_listing_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_listing_screen/bloc/phone_listing_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_listing_screen/bloc/phone_listing_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_listing_screen/models/phone_listing_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/phone_listing_screen/phone_listing_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/bloc/product_summary_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/bloc/product_summary_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/bloc/product_summary_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/models/product_summary_item_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/models/product_summary_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/product_summary_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/product_summary_screen/widgets/product_summary_item_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/select_login_or_payment/login_or_payment_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/SubmitApplicationModel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/bloc/term_and_condition_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/bloc/term_and_condition_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/bloc/term_and_condition_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/models/term_and_condition_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/success_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/term_and_condition_screen/term_and_condition_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/user_details_screen/bloc/user_details_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/user_details_screen/bloc/user_details_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/user_details_screen/bloc/user_details_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/user_details_screen/models/user_details_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/user_details_screen/references_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/presentation/user_details_screen/user_details_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/routes/app_routes.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/theme/app_decoration.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/theme/app_style.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/webview.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/app_bar/appbar_image.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/app_bar/appbar_subtitle.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/app_bar/appbar_subtitle_1.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/app_bar/appbar_subtitle_2.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/app_bar/appbar_title.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/app_bar/custom_app_bar.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_button.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_camera/camera.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_camera/models.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_camera/overlay.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_camera/overlay_camera_testing.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_camera/overlay_shape.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_floating_button.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_floating_edit_text.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_image_view.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_painter.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_radio_button.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/custom_text_form_field.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/documents.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/widgets/loader_dialog.dart" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2T6HtSMIceG0ZbT4vQuVeeuywmJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/asad/StudioProjects/kistpay_chikoo_package/kistpay_chikoo_package-main",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9409e87-6b5a-451d-8b9a-78532b7810fc" name="Changes" comment="" />
+      <created>1690356824951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690356824951</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
