@@ -348,6 +348,9 @@ class PaymentScreen extends StatelessWidget {
                                   ['instalmentNumber']));
                     }
                   }
+                  else{
+                    showMessageBasedOnStatusCode(decodedResponse['code']);
+                  }
                 }
               },
             )
@@ -357,6 +360,28 @@ class PaymentScreen extends StatelessWidget {
     );
   }
 
+  void showMessageBasedOnStatusCode(int statusCode) {
+    switch (statusCode) {
+      case 0001:
+        showToast(message: 'Validation failed.', backgroundColor: Colors.red);
+        break;
+      case 0002:
+        showToast(message: 'MID or TID not configured.', backgroundColor: Colors.red);
+        break;
+      case 0003:
+        showToast(message: 'Unauthorized transaction.', backgroundColor: Colors.red);
+        break;
+      case 0004:
+        showToast(message: 'Invalid message type.', backgroundColor: Colors.red);
+        break;
+      case 9999:
+        showToast(message: 'Something went wrong.', backgroundColor: Colors.red);
+        break;
+      default:
+        showToast(message: 'Unknown status code.', backgroundColor: Colors.red);
+        break;
+    }
+  }
   onTapImgArrowLeft(BuildContext context) {
     NavigatorService.goBack();
   }

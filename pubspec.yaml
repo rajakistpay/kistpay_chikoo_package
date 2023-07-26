@@ -17,7 +17,7 @@ dependencies:
   cached_network_image: ^3.2.1
   flutter_svg: ^1.1.6
   equatable: ^2.0.0
-  intl: ^0.17.0
+  intl: ^0.18.0
   pin_code_fields:
   camera: ^0.10.5+2
   webview_flutter: ^4.2.2
